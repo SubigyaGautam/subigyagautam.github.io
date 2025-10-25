@@ -3,10 +3,734 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subigya Gautam</title>
+  
+  <!-- SEO Meta Tags -->
+  <!-- REPLACE: Update with your actual name and description -->
+  <meta name="description" content="Subigya Gautam - Machine Learning Engineer & Software Developer. Portfolio showcasing projects in AI, ML, and web development.">
+  <meta name="keywords" content="Machine Learning, Software Development, AI, Portfolio, Web Development">
+  <meta name="author" content="Subigya Gautam">
+  
+  <!-- Open Graph Meta Tags for Social Media Previews -->
+  <!-- REPLACE: Update og:title, og:description, og:url, and og:image with your details -->
+  <meta property="og:title" content="Subigya Gautam - ML Engineer & Developer">
+  <meta property="og:description" content="Machine Learning Engineer & Software Developer specializing in AI and web technologies.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://subigyagautam.github.io">
+  <meta property="og:image" content="https://subigyagautam.github.io/images/profile.jpg">
+  
+  
+  <!-- REPLACE: Update title with your name -->
+  <title>Subigya Gautam - ML Engineer & Developer</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, I’m Subigya 👋</h1>
-  <p>Welcome to my personal website!</p>
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <!-- REPLACE: Update logo/name -->
+        <a href="#home" class="logo">SG</a>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="https://docs.google.com/document/d/10ZVAh0CCU2KaFU5SqYTAfdUpKNaa8njdCADNSYoIRvM/edit?usp=drive_link" class="nav-link" target="_blank">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <!-- Profile Photo -->
+        <div class="hero-image">
+          <img src="images/profilepic.png" alt="Subigya Gautam" class="profile-photo">
+        </div>
+        
+        <!-- Hero Text -->
+        <div class="hero-text">
+          <h1 class="hero-title">
+            👋 Hi, I'm <span class="highlight">Subigya Gautam</span>
+          </h1>
+          <h2 class="hero-subtitle">Machine Learning | AI | Software Engineering | Salesforce</h2>
+          <p class="hero-tagline">
+            Exploring the intersection of AI & real-world applications
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="https://docs.google.com/document/d/10ZVAh0CCU2KaFU5SqYTAfdUpKNaa8njdCADNSYoIRvM/edit?usp=drive_link" class="btn btn-secondary" target="_blank">
+              <i class="fas fa-file-alt"></i> View Resume
+            </a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll Down Indicator -->
+    <div class="scroll-indicator">
+      <a href="#about" aria-label="Scroll to about section">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">Passionate about building intelligent systems that make a difference</p>
+      
+      <div class="about-content">
+        <!-- Quick Info Cards -->
+        <div class="about-quick-info">
+          <div class="quick-info-card">
+            <div class="quick-info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="quick-info-text">
+              <h4>Location</h4>
+              <p>Tempe, Arizona</p>
+            </div>
+          </div>
+          
+          <div class="quick-info-card">
+            <div class="quick-info-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="quick-info-text">
+              <h4>Education</h4>
+              <p>MS in Computer Science</p>
+              <span class="gpa-badge">GPA: 4.0/4.0</span>
+            </div>
+          </div>
+          
+          <div class="quick-info-card">
+            <div class="quick-info-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="quick-info-text">
+              <h4>Latest Role</h4>
+              <p>Machine Learning Scientist Intern</p>
+              <span class="company-badge">GoDaddy</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Main About Text -->
+        <div class="about-main">
+          <!-- Introduction -->
+          <div class="about-intro">
+            <p class="intro-greeting">Hello there, I'm Subigya! 👋</p>
+            <p>
+              I specialize in <strong>AI development</strong>, <strong>machine learning engineering</strong>, and 
+              building intelligent systems that solve real problems. My work spans <strong>LLMs</strong>, 
+              <strong>NLP</strong>, <strong>conversational AI</strong>, and scalable ML infrastructure, with 
+              hands-on experience deploying production models on <strong>AWS</strong> and <strong>Azure</strong>
+            </p>
+            <p>
+              What drives me is turning ambiguous challenges into working solutions. I thrive at the intersection of research and production, where I get to build systems that process tens of thousands of requests daily while collaborating with cross-functional teams to ship features that make an impact. My background spans from leading a 4-person engineering team building  solutions, to architecting enterprise integrations, to developing NLP-powered platforms for law enforcement, and most recently engineering AI agents and ML infrastructure. I focus on delivering measurable results with clean, maintainable code.
+            </p>
+          </div>
+          
+          <!-- Passionate About -->
+          <div class="about-section">
+            <h3>🔥 Passionate About</h3>
+            <p>
+              <strong>Machine Learning</strong> | <strong>Artificial Intelligence</strong> | 
+              <strong>Software Engineering</strong> | <strong>Salesforce</strong>
+            </p>
+            <p>Exploring the intersection of AI & real-world applications</p>
+          </div>
+          
+          <!-- Currently Learning -->
+          <div class="about-section">
+            <h3>🎯 Currently Learning</h3>
+            <p>
+              • Deep diving into Machine Learning with Python<br>
+              • Enhancing my skills in AI-driven solutions
+            </p>
+          </div>
+          
+          <!-- Looking to Collaborate -->
+          <div class="about-section">
+            <h3>🤝 Looking to Collaborate On</h3>
+            <p>
+              • Exciting Machine Learning & AI projects<br>
+              • Anything innovative that pushes boundaries!
+            </p>
+          </div>
+          
+          <!-- News & Highlights -->
+          <div class="about-section">
+            <h3>📰 MOM I WAS IN THE NEWS !!</h3>
+            <p>
+              Featured in <a href="https://www.theadvocate.com/acadiana/news/business/ul-students-lafayette-tech-startups-partner-in-program-intended-to-foster-innovation/article_3e3e95b6-5bdb-11ef-a898-63543e8728f6.html" target="_blank" class="about-link">The Advocate</a> 
+              and <a href="https://www.linkedin.com/feed/update/urn:li:activity:7230281800420356096/" target="_blank" class="about-link">LinkedIn</a> for innovation partnerships
+            </p>
+          </div>
+          
+          <!-- Other Activities -->
+          <div class="about-section">
+            <h3>✨ More About Me</h3>
+            <p>
+              • Part of the <a href="https://people.cmix.louisiana.edu/hcilab/people" target="_blank" class="about-link">HCI-LAB</a> research team.<br>
+              • Oh yeah sometimes I also write blogs on <a href="https://medium.com/@gautamsubigya" target="_blank" class="about-link">Medium</a> about AI, ML, and technology.
+            </p>
+          </div>
+          
+          <!-- Closing -->
+          <div class="about-closing">
+            <p>
+              If you're looking for someone who thrives on innovation, embraces challenges, and consistently 
+              delivers impactful results, let's connect and build something amazing together! 🚀
+            </p>
+          </div>
+          
+          <!-- Contact CTA -->
+          <div class="about-cta">
+            <a href="mailto:gautamsubigya@gmail.com" class="btn btn-primary">
+              <i class="fas fa-envelope"></i> Get In Touch
+            </a>
+            <a href="https://www.linkedin.com/in/subigyagautam" target="_blank" class="btn btn-secondary">
+              <i class="fab fa-linkedin"></i> Connect on LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="timeline">
+        
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Machine Learning Scientist - Intern</h3>
+            <h4>GoDaddy</h4>
+            <p class="timeline-date"><i class="fas fa-calendar"></i> June 2025 - September 2025 | Tempe, AZ</p>
+            <ul class="experience-details">
+              <li>Engineered Model Context Protocol (MCP) server integrating DeepSpin semantic expansion models with end-to-end ML inference pipeline, achieving 99.7% uptime at 50K+ daily requests</li>
+              <li>Developed conversational AI agent using LLMs (OpenAI/Claude) for intelligent search and recommendations, achieving 35% engagement improvement and 2-3 minute reduction in search time</li>
+              <li>Containerized and deployed ML models on AWS EKS/EC2</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Experience 2 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>AI Developer - Intern</h3>
+            <h4>Imperian Systems</h4>
+            <p class="timeline-date"><i class="fas fa-calendar"></i> June 2024 - July 2024 | Lafayette, LA</p>
+            <ul class="experience-details">
+              <li>Built production NLP-powered platform "Blue Partner" for automated report generation using body-cam data, reducing manual processing time from 45 minutes to 12 minutes</li>
+              <li>Implemented GPT-powered conversational AI with policy compliance automation, achieving 60% improvement in report quality</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Experience 3 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Graduate Teaching Assistant</h3>
+            <h4>University of Louisiana at Lafayette</h4>
+            <p class="timeline-date"><i class="fas fa-calendar"></i> August 2023 - May 2025 | Lafayette, LA</p>
+            <ul class="experience-details">
+              <li>Assisted in teaching Java, Data Structures & Algorithms, and Software Design and Architecture</li>
+              <li>Guided students through coding concepts, problem-solving, and system design fundamentals</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Experience 4 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Integration Engineer</h3>
+            <h4>Keela</h4>
+            <p class="timeline-date"><i class="fas fa-calendar"></i> October 2022 - July 2023 | Vancouver, Canada</p>
+            <ul class="experience-details">
+              <li>Architected and deployed 5+ enterprise-grade integrations using scalable REST/SOAP APIs and custom ETL pipelines, elevating analytics visibility by 30% and achieving 99.9% data accuracy</li>
+              <li>Cut post-sprint bugs by 50% by driving CRM feature development and introducing systematic debugging practices</li>
+              <li>Accelerated technology rollouts by 20% by designing integration specs, architecture diagrams, and role-specific training programs adopted by 5 cross-functional teams</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Experience 5 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Software Engineer</h3>
+            <h4>ComplianceQuest</h4>
+            <p class="timeline-date"><i class="fas fa-calendar"></i> April 2019 - June 2022 | Tampa, FL</p>
+            <ul class="experience-details">
+              <li>Delivered 12+ product features across 5 ComplianceQuest modules by engineering scalable Salesforce solutions with object-oriented design, reducing page load times by 20% and improving workflow efficiency for enterprise users.</li>
+              <li>Delivered 10+ projects 100% on schedule by leading a 4-member engineering team, enforcing coding and security standards, and driving agile SCRUM practices that reduced deployment errors by 30%.</li>
+              <li>Reduced release time by 25% for large-scale Salesforce deployments by building a Java-based diff-generating engine that automated version control checks and streamlined deployment workflows.</li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="skills-grid">
+        <!-- REPLACE: Update skills with your actual skillset -->
+        
+        <!-- Programming Languages -->
+        <div class="skill-category">
+          <div class="skill-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Programming</h3>
+          <ul class="skill-list">
+            <li>Python</li>
+            <li>Java</li>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        
+        <!-- NLP & AI -->
+        <div class="skill-category">
+          <div class="skill-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>NLP & AI</h3>
+          <ul class="skill-list">
+            <li>LLMs (GPT, Claude, Hugging Face)</li>
+            <li>Transformers & Generative AI</li>
+            <li>NLP (spaCy, NLTK)</li>
+            <li>RAG (Retrieval-Augmented Generation)</li>
+            <li>Model Context Protocol (MCP)</li>
+            <li>Embeddings & AI Agents</li>
+            <li>Prompt Engineering</li>
+            <li>Recommender Systems</li>
+          </ul>
+        </div>
+        
+        <!-- Machine Learning -->
+        <div class="skill-category">
+          <div class="skill-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3>Machine Learning</h3>
+          <ul class="skill-list">
+            <li>Deep Learning</li>
+            <li>Multimodal ML</li>
+            <li>Time Series</li>
+            <li>Feature Engineering</li>
+            <li>MLOps (Model Deployment & Monitoring)</li>
+          </ul>
+        </div>
+        
+        <!-- Frameworks & Tools -->
+        <div class="skill-category">
+          <div class="skill-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Frameworks & Tools</h3>
+          <ul class="skill-list">
+            <li>PyTorch</li>
+            <li>TensorFlow</li>
+            <li>Scikit-learn</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+          </ul>
+        </div>
+        
+        <!-- Cloud & Infrastructure -->
+        <div class="skill-category">
+          <div class="skill-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3>Cloud & Infrastructure</h3>
+          <ul class="skill-list">
+            <li>AWS (SageMaker, Lambda, EC2, S3)</li>
+            <li>Azure (OpenAI, Function Apps)</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Apache Spark</li>
+          </ul>
+        </div>
+        
+        <!-- Data & Databases -->
+        <div class="skill-category">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Data & Databases</h3>
+          <ul class="skill-list">
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>ETL Pipelines</li>
+            <li>Data Modeling</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Preview Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Here are some of my recent projects that showcase my skills and passion</p>
+      
+      <div class="projects-grid">
+        <!-- REPLACE: Update project details with your actual projects -->
+        
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/project1.svg" alt="MCP Personalization Server">
+            <div class="project-overlay">
+              <a href="https://github.com/SubigyaGautam/MCP_Agent_Project_documentation" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>MCP Personalization Server & Conversational Agent</h3>
+            <p>
+              Comprehensive documentation for integrating a Conversational AI Agent with an MCP 
+              Personalization Server. Features JSON-RPC 2.0 tools for domain search, pricing, 
+              and propensity data queries.
+            </p>
+            <div class="project-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">AI Agent</span>
+              <span class="tag">JSON-RPC</span>
+              <span class="tag">AWS Athena</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/project2.svg" alt="Mystery Weather Data Analysis">
+            <div class="project-overlay">
+              <a href="https://github.com/SubigyaGautam/mystery-data-analysis" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Mystery Weather Data Investigation</h3>
+            <p>
+              Comprehensive analysis of a 510MB weather dataset using Python, uncovering 
+              extraordinary Arctic precipitation extremes and weather patterns through 
+              data visualization and statistical analysis.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Data Analysis</span>
+              <span class="tag">Visualization</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/project3.svg" alt="Sentiment Analysis LSTM">
+            <div class="project-overlay">
+              <a href="https://github.com/SubigyaGautam/sentiment-analysis-" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Sentiment Analysis with LSTM</h3>
+            <p>
+              NLP starter project for sentiment analysis using Long Short-Term Memory (LSTM) 
+              networks. Designed for learning and experimentation with deep learning 
+              approaches to text classification.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">NLP</span>
+              <span class="tag">LSTM</span>
+              <span class="tag">Deep Learning</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/project4.svg" alt="Web Scraper">
+            <div class="project-overlay">
+              <a href="https://github.com/SubigyaGautam/web-scraper" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Web Scraper Tool</h3>
+            <p>
+              Handy web scraping tool designed to extract flight information from ScholarTrip 
+              and save results to CSV. Built for efficient data collection and analysis.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Web Scraping</span>
+              <span class="tag">BeautifulSoup</span>
+              <span class="tag">CSV</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/project5.svg" alt="Slack Content Search Bot">
+            <div class="project-overlay">
+              <a href="https://github.com/SubigyaGautam/Slack-Content-Search-Bot" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Slack Content Search Bot</h3>
+            <p>
+              Intelligent bot designed to search and retrieve content within Slack channels 
+              efficiently. Enhances team productivity with quick access to information.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Slack API</span>
+              <span class="tag">Bot Development</span>
+              <span class="tag">Search</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="projects-cta">
+        <a href="projects.html" class="btn btn-primary">View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research & Publications Section -->
+  <section id="research" class="research">
+    <div class="container">
+      <h2 class="section-title">Research & Publications</h2>
+      
+      <div class="research-content">
+        <!-- Publication -->
+        <div class="research-item">
+          <div class="research-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <div class="research-details">
+            <h3 class="research-title">
+              <a href="https://doi.org/10.1145/3694907.3765915" target="_blank" class="research-link">
+                "Exploring Supervised LSTM Model on Multimodal Data to Detect Distracted Students in Immersive Educational VR Environments"
+              </a>
+            </h3>
+            <p class="research-venue">
+              <i class="fas fa-university"></i> ACM Symposium on Spatial User Interaction (SUI), November 2025
+            </p>
+            <p class="research-description">
+              Research on using LSTM neural networks with multimodal data to detect student distraction in VR educational environments.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Reviewer Roles -->
+        <div class="research-item">
+          <div class="research-icon">
+            <i class="fas fa-user-check"></i>
+          </div>
+          <div class="research-details">
+            <h3 class="research-title">Peer Reviewer</h3>
+            <ul class="reviewer-list">
+              <li><strong>AIES-25</strong> - AI Ethics & Society Conference</li>
+              <li><strong>IEEE SOCC 2025</strong> - Generative AI Track</li>
+              <li><strong>PEARC25</strong> - Applications & Software Development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Honors & Awards Section -->
+  <section id="awards" class="awards">
+    <div class="container">
+      <h2 class="section-title">Honors & Awards</h2>
+      
+      <div class="awards-grid">
+        <!-- Award 1 -->
+        <div class="award-card">
+          <div class="award-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3>Academic Excellence Award</h3>
+          <p class="award-issuer">
+            <i class="fas fa-university"></i> University of Louisiana at Lafayette
+          </p>
+          <p class="award-date">
+            <i class="fas fa-calendar"></i> April 2025
+          </p>
+          <p class="award-description">
+            Honored at the University's prestigious Honors Convocation and Academic Excellence Awards for maintaining a 4.0 GPA throughout Graduate Studies (2023-2025).
+          </p>
+        </div>
+        
+        <!-- Award 2 -->
+        <div class="award-card">
+          <div class="award-icon">
+            <i class="fas fa-medal"></i>
+          </div>
+          <h3>Scholarship for Graduate Studies</h3>
+          <p class="award-issuer">
+            <i class="fas fa-university"></i> University of Louisiana at Lafayette
+          </p>
+          <p class="award-date">
+            <i class="fas fa-calendar"></i> August 2023
+          </p>
+          <p class="award-description">
+            Received a fully funded scholarship and assistantship to pursue MS in Computer Science.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">
+        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+      </p>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Email</h3>
+              <!-- REPLACE: Update email -->
+              <a href="mailto:gautamsubigya@gmail.com">gautamsubigya@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-text">
+              <h3>GitHub</h3>
+              <!-- REPLACE: Update GitHub username -->
+              <a href="https://github.com/subigyagautam" target="_blank">@subigyagautam</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="contact-text">
+              <h3>LinkedIn</h3>
+              <!-- REPLACE: Update LinkedIn profile -->
+              <a href="https://linkedin.com/in/subigyagautam" target="_blank">linkedin.com/in/subigyagautam</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-medium"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Medium Blog</h3>
+              <a href="https://medium.com/@gautamsubigya" target="_blank">medium.com/@gautamsubigya</a>
+            </div>
+          </div>
+          
+                  </div>
+        
+        <div class="contact-social">
+          <h3>Connect with me</h3>
+          <div class="social-links">
+            <!-- REPLACE: Update all social media links -->
+            <a href="https://github.com/subigyagautam" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/subigyagautam" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://medium.com/@gautamsubigya" target="_blank" aria-label="Medium">
+              <i class="fab fa-medium"></i>
+            </a>
+            <a href="mailto:gautamsubigya@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Subigya Gautam. All rights reserved.</p>
+      <p class="footer-note">Built with HTML, CSS, and JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>

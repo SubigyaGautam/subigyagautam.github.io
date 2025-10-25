@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <!-- REPLACE: Update with your actual name -->
+  <meta name="description" content="Projects by Subigya Gautam - Machine Learning, AI, and Software Development projects.">
+  <meta name="keywords" content="Machine Learning Projects, AI Projects, Software Development, Portfolio">
+  <meta name="author" content="Subigya Gautam">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Projects - Subigya Gautam">
+  <meta property="og:description" content="Explore my portfolio of Machine Learning, AI, and Software Development projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://subigyagautam.github.io/projects.html">
+  
+  <!-- REPLACE: Update title with your name -->
+  <title>Projects - Subigya Gautam</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <!-- REPLACE: Update logo/name -->
+        <a href="index.html" class="logo">SG</a>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#home" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+          <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="https://docs.google.com/document/d/10ZVAh0CCU2KaFU5SqYTAfdUpKNaa8njdCADNSYoIRvM/edit?usp=drive_link" class="nav-link" target="_blank">Resume</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Projects Header -->
+  <section class="projects-header">
+    <div class="container">
+      <h1 class="page-title">All Projects</h1>
+      <p class="page-subtitle">
+        A comprehensive collection of my work in Machine Learning, AI, and Software Development
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects List Section -->
+  <section class="projects-list">
+    <div class="container">
+      <!-- Filter Buttons (Optional - can be enhanced with JS filtering) -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="ai">AI & NLP</button>
+        <button class="filter-btn" data-filter="data">Data Analysis</button>
+        <button class="filter-btn" data-filter="other">Other</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- REPLACE: Update all project details with your actual projects -->
+        
+        <!-- Project 1 -->
+        <div class="project-card" data-category="ai other">
+          <div class="project-image">
+            <img src="images/project1.svg" alt="MCP Personalization Server">
+            <div class="project-overlay">
+              <a href="https://github.com/SubigyaGautam/MCP_Agent_Project_documentation" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>MCP Personalization Server & Conversational Agent</h3>
+            <p>
+              Comprehensive documentation for integrating a Conversational AI Agent (TypeScript + GoDaddy Agent SDK) 
+              with an MCP (Model Context Protocol) Personalization Server. The system exposes four tools via 
+              JSON-RPC 2.0 for domain search, pricing, and propensity data queries.
+            </p>
+            <p class="project-details">
+              <strong>Key Features:</strong>
+            </p>
+            <ul class="project-features">
+              <li>JSON-RPC 2.0 tool registry pattern for extensibility</li>
+              <li>Integration with AWS Athena for propensity data</li>
+              <li>Real-time domain availability and pricing lookup</li>
+              <li>Comprehensive API documentation and deployment guides</li>
+              <li>Security-focused with JWT handling and IAM policies</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">AI Agent</span>
+              <span class="tag">JSON-RPC</span>
+              <span class="tag">AWS Athena</span>
+              <span class="tag">MCP</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/SubigyaGautam/MCP_Agent_Project_documentation" target="_blank" class="btn btn-small">
+                <i class="fab fa-github"></i> View Documentation
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="data ml">
+          <div class="project-image">
+            <img src="images/project2.svg" alt="Mystery Weather Data Investigation">
+            <div class="project-overlay">
+              <a href="https://github.com/SubigyaGautam/mystery-data-analysis" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Mystery Weather Data Investigation</h3>
+            <p>
+              Comprehensive analysis of a 510MB weather dataset using Python, uncovering extraordinary 
+              Arctic precipitation extremes and weather patterns. This project demonstrates advanced data 
+              analysis techniques, statistical methods, and data visualization skills.
+            </p>
+            <p class="project-details">
+              <strong>Key Features:</strong>
+            </p>
+            <ul class="project-features">
+              <li>Analysis of 510MB weather dataset with millions of records</li>
+              <li>Discovery of Arctic precipitation extremes and patterns</li>
+              <li>Advanced data visualization with Matplotlib and Seaborn</li>
+              <li>Statistical analysis and hypothesis testing</li>
+              <li>Data cleaning and preprocessing techniques</li>
+              <li>Comprehensive Jupyter notebook documentation</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Data Analysis</span>
+              <span class="tag">Matplotlib</span>
+              <span class="tag">Jupyter</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/SubigyaGautam/mystery-data-analysis" target="_blank" class="btn btn-small">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="ai ml">
+          <div class="project-image">
+            <img src="images/project3.svg" alt="Sentiment Analysis LSTM">
+            <div class="project-overlay">
+              <a href="https://github.com/SubigyaGautam/sentiment-analysis-" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Sentiment Analysis with LSTM</h3>
+            <p>
+              NLP starter project for sentiment analysis using Long Short-Term Memory (LSTM) networks. 
+              This project is designed for learning and experimentation with deep learning approaches 
+              to text classification and natural language understanding.
+            </p>
+            <p class="project-details">
+              <strong>Key Features:</strong>
+            </p>
+            <ul class="project-features">
+              <li>LSTM-based neural network architecture</li>
+              <li>Text preprocessing and tokenization</li>
+              <li>Word embeddings for semantic representation</li>
+              <li>Binary sentiment classification (positive/negative)</li>
+              <li>Model training and evaluation metrics</li>
+              <li>Educational code with detailed comments</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">NLP</span>
+              <span class="tag">LSTM</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">TensorFlow</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/SubigyaGautam/sentiment-analysis-" target="_blank" class="btn btn-small">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="other data">
+          <div class="project-image">
+            <img src="images/project4.svg" alt="Web Scraper">
+            <div class="project-overlay">
+              <a href="https://github.com/SubigyaGautam/web-scraper" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Web Scraper Tool</h3>
+            <p>
+              Handy web scraping tool designed to extract flight information from ScholarTrip 
+              and save results to CSV format. Built for efficient data collection and analysis 
+              with automated extraction capabilities.
+            </p>
+            <p class="project-details">
+              <strong>Key Features:</strong>
+            </p>
+            <ul class="project-features">
+              <li>Automated flight data extraction from ScholarTrip</li>
+              <li>CSV export for easy data analysis</li>
+              <li>Robust error handling and retry logic</li>
+              <li>Configurable scraping parameters</li>
+              <li>Data cleaning and formatting</li>
+              <li>Efficient parsing with BeautifulSoup</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Web Scraping</span>
+              <span class="tag">BeautifulSoup</span>
+              <span class="tag">CSV</span>
+              <span class="tag">Requests</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/SubigyaGautam/web-scraper" target="_blank" class="btn btn-small">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-category="other ai">
+          <div class="project-image">
+            <img src="images/project5.svg" alt="Slack Content Search Bot">
+            <div class="project-overlay">
+              <a href="https://github.com/SubigyaGautam/Slack-Content-Search-Bot" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Slack Content Search Bot</h3>
+            <p>
+              Intelligent bot designed to search and retrieve content within Slack channels 
+              efficiently. Enhances team productivity by providing quick access to information 
+              and historical conversations across workspaces.
+            </p>
+            <p class="project-details">
+              <strong>Key Features:</strong>
+            </p>
+            <ul class="project-features">
+              <li>Intelligent content search across Slack channels</li>
+              <li>Natural language query processing</li>
+              <li>Integration with Slack API</li>
+              <li>Fast retrieval of historical messages</li>
+              <li>User-friendly bot commands</li>
+              <li>Workspace-wide search capabilities</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Slack API</span>
+              <span class="tag">Bot Development</span>
+              <span class="tag">Search</span>
+              <span class="tag">NLP</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/SubigyaGautam/Slack-Content-Search-Bot" target="_blank" class="btn btn-small">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Interested in working together?</h2>
+      <p>I'm always open to discussing new projects and opportunities.</p>
+      <a href="index.html#contact" class="btn btn-primary">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Subigya Gautam. All rights reserved.</p>
+      <p class="footer-note">Built with HTML, CSS, and JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+

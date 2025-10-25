@@ -1,0 +1,37 @@
+# Images Directory
+
+This directory contains images for the portfolio website.
+
+## Current Images
+
+### Profile Image (REQUIRED for Hero Section!)
+- **profilepic.png** ✅ - Your professional profile photo for the Hero section
+  - Displayed as circular: 200px diameter (desktop), 150px (mobile)
+  - Format: PNG
+
+### Project Images (SVG - Already Created!)
+- **project1.svg** ✅ - MCP Personalization Server (AI/ML themed)
+- **project2.svg** ✅ - Weather Data Analysis (Data visualization themed)
+- **project3.svg** ✅ - Sentiment Analysis (NLP themed with emojis)
+- **project4.svg** ✅ - Web Scraper (Web/Data themed)
+- **project5.svg** ✅ - Slack Search Bot (Chat/Bot themed)
+
+## Image Guidelines
+
+1. **Format**: Use JPG for photos, PNG for graphics with transparency
+2. **Size**: Keep file sizes under 500KB for optimal loading speed
+3. **Dimensions**: Use consistent dimensions for project images (e.g., 800x600px)
+4. **Optimization**: Compress images using tools like TinyPNG or ImageOptim
+5. **Alt Text**: Make sure all images have descriptive alt text in the HTML
+
+## Placeholder Images
+
+Until you add your own images, you can use placeholder services:
+- https://via.placeholder.com/400x400 (for profile)
+- https://via.placeholder.com/800x600 (for projects)
+
+Or use free stock photo sites:
+- https://unsplash.com/
+- https://www.pexels.com/
+- https://pixabay.com/
+
