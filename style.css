@@ -638,14 +638,16 @@ section {
 .timeline-item:nth-child(odd) .timeline-content {
   margin-left: 0;
   margin-right: auto;
-  padding-right: calc(50% + 30px);
-  text-align: right;
+  padding-left: 30px;
+  width: calc(50% - 15px);
+  text-align: left;
 }
 
 .timeline-item:nth-child(even) .timeline-content {
   margin-left: auto;
   margin-right: 0;
-  padding-left: calc(50% + 30px);
+  padding-left: 30px;
+  width: calc(50% - 15px);
   text-align: left;
 }
 
@@ -697,10 +699,7 @@ section {
   gap: 0.5rem;
 }
 
-.timeline-item:nth-child(odd) .timeline-date {
-  justify-content: flex-end;
-}
-
+.timeline-item:nth-child(odd) .timeline-date,
 .timeline-item:nth-child(even) .timeline-date {
   justify-content: flex-start;
 }
@@ -727,6 +726,16 @@ section {
   font-weight: bold;
 }
 
+/* Tablet Timeline */
+@media (max-width: 1024px) {
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    width: calc(50% - 10px);
+    padding-left: 20px;
+    padding-right: var(--spacing-sm);
+  }
+}
+
 /* Mobile Timeline */
 @media (max-width: 768px) {
   .timeline::before {
@@ -735,10 +744,12 @@ section {
   
   .timeline-marker {
     left: 20px;
+    transform: translateX(0);
   }
   
   .timeline-item:nth-child(odd) .timeline-content,
   .timeline-item:nth-child(even) .timeline-content {
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
     padding-left: 60px;
@@ -749,6 +760,14 @@ section {
   .timeline-item:nth-child(odd) .timeline-date,
   .timeline-item:nth-child(even) .timeline-date {
     justify-content: flex-start;
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.25rem;
+  }
+  
+  .timeline-content h4 {
+    font-size: 1rem;
   }
 }
 
@@ -1515,6 +1534,45 @@ section {
   
   .project-links .btn {
     width: 100%;
+  }
+  
+  /* Timeline on small mobile */
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    padding-left: 50px;
+    padding-right: var(--spacing-sm);
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.125rem;
+  }
+  
+  .timeline-content h4 {
+    font-size: 0.9rem;
+  }
+  
+  .experience-details li {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  /* Quick info cards on mobile */
+  .about-quick-info {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+  
+  .quick-info-card {
+    padding: var(--spacing-sm);
+  }
+  
+  .quick-info-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .quick-info-icon i {
+    font-size: 1.25rem;
   }
 }
 
